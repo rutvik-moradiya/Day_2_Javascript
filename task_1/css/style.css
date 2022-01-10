@@ -1,0 +1,79 @@
+             * {
+                 margin: auto;
+             }
+             
+             .main-container {}
+             
+             .container {
+                 width: 50%;
+                 text-align: center;
+                 position: relative;
+             }
+             
+             .image-container {
+                 width: 60%;
+                 display: flex;
+             }
+             
+             .container h1 {
+                 padding-top: 2rem;
+             }
+             
+             .image-container1,
+             .image-container2,
+             .image-container3 {
+                 border-radius: 160px;
+                 height: 150px;
+                 width: 160px;
+                 align-items: center;
+                 background-color: orangered;
+                 /* margin: 2rem auto 2rem; */
+                 padding: .01rem;
+             }
+             
+             .image-container1 h1 {
+                 padding-top: 0rem;
+                 text-align: center;
+                 font-size: 15px;
+                 font-family: inherit;
+             }
+             
+             .image-container2 h1 {
+                 padding-top: .5rem;
+                 text-align: center;
+                 font-size: 15px;
+                 font-family: inherit;
+             }
+             
+             .image-container3 h1 {
+                 padding-top: 0rem;
+                 text-align: start;
+                 font-size: 15px;
+                 font-family: inherit;
+             }
+             
+             .image-container1 h6,
+             .image-container2 h6,
+             .image-container3 h6,
+             .container h6 {
+                 padding: 0px;
+                 margin: 0px;
+                 text-align: center;
+                 font-size: 12px;
+                 font-weight: 100;
+             }
+             
+             .image1,
+             .image2,
+             .image3 {
+                 margin: 1rem;
+             }
+             
+             .image-container {
+                 padding-top: 2rem;
+                 font-family: Arial, Helvetica, sans-serif;
+             }
+             
+             .more-image {
+                 color: orangered;
+             }
