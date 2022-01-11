@@ -2,78 +2,92 @@
                  margin: auto;
              }
              
-             .main-container {}
-             
-             .container {
-                 width: 50%;
-                 text-align: center;
-                 position: relative;
+             .header {
+                 max-height: 70px;
+                 background-color: skyblue;
              }
              
-             .image-container {
-                 width: 60%;
+             .header .row {
+                 height: 60px;
+                 align-items: center;
                  display: flex;
              }
              
-             .container h1 {
-                 padding-top: 2rem;
+             .row .left-side li {
+                 list-style-type: none;
+                 color: white;
              }
              
-             .image-container1,
-             .image-container2,
-             .image-container3 {
-                 border-radius: 160px;
-                 height: 150px;
-                 width: 160px;
+             .row .left-side li i {
+                 padding-left: 1rem;
+                 padding-right: .5rem;
+             }
+             
+             .right-side li {
+                 color: white;
+                 list-style-type: none;
+             }
+             
+             .right-side li i {
+                 padding-left: 1rem;
+                 padding-right: .5rem;
+             }
+             
+             .navigator {
+                 height: 100px;
+                 max-height: 100px;
+                 display: flex;
                  align-items: center;
-                 background-color: orangered;
-                 /* margin: 2rem auto 2rem; */
-                 padding: .01rem;
              }
              
-             .image-container1 h1 {
-                 padding-top: 0rem;
-                 text-align: center;
-                 font-size: 15px;
-                 font-family: inherit;
+             .navigator .logo img {
+                 width: 30%;
+                 max-width: 100%;
+                 max-height: 100%;
+                 margin-left: 12rem;
              }
              
-             .image-container2 h1 {
-                 padding-top: .5rem;
-                 text-align: center;
-                 font-size: 15px;
-                 font-family: inherit;
+             .navigator .menu ul {
+                 padding-right: 6rem;
+                 display: flex;
              }
              
-             .image-container3 h1 {
-                 padding-top: 0rem;
-                 text-align: start;
-                 font-size: 15px;
-                 font-family: inherit;
+             .navigator .menu ul a:hover {
+                 padding-right: 2rem;
+                 color: blue;
              }
              
-             .image-container1 h6,
-             .image-container2 h6,
-             .image-container3 h6,
-             .container h6 {
-                 padding: 0px;
-                 margin: 0px;
+             .navigator .menu ul a {
+                 padding-right: 2rem;
+                 color: black;
+             }
+             
+             .background-image img {
+                 width: 100%;
+                 /* min-width: 100%;
+                 min-height: 100%; */
+                 position: fixed;
+             }
+             
+             .background-image .center-text {
+                 position: absolute;
+                 background-color: skyblue;
+                 top: 50%;
+                 left: 50%;
+                 padding-top: 1rem;
+                 padding-left: 1rem;
+                 padding-right: 1rem;
+                 border-radius: 15px;
+             }
+             
+             .background-image .center-text h2 {
+                 padding-bottom: 1rem;
+                 color: white;
+                 font-size: 20px;
+             }
+             
+             .background-image .center-text h6 {
+                 color: white;
                  text-align: center;
                  font-size: 12px;
-                 font-weight: 100;
-             }
-             
-             .image1,
-             .image2,
-             .image3 {
-                 margin: 1rem;
-             }
-             
-             .image-container {
-                 padding-top: 2rem;
-                 font-family: Arial, Helvetica, sans-serif;
-             }
-             
-             .more-image {
-                 color: orangered;
              }
