@@ -11,19 +11,87 @@
 
 <body>
     <section class="container">
-        <h1>The first Value is 10</h1><br>
+        <h1>By For LOOP</h1><br>
+        <script type="text/javascript">
+            for (var a = 1; a <= 10; a++) {
+                console.log(a);
+                document.write('The Number is' + a + '<br>');
 
-        <h1>The first Value is 5</h1>
+            }
+        </script>
+        <h1>By While Loop</h1>
+        <script type="text/javascript">
+            var a = 1;
+            while (a <= 10) {
+                console.log(a);
+                document.write('The Number is' + a + '<br>');
+                a++;
+            }
+        </script>
+        <h1>By Do While Loop</h1>
+        <script type="text/javascript">
+            var a = 1;
+            do {
+                console.log(a);
+                document.write('The Number is' + a + '<br>');
+                a++;
+            }
+
+            while (a <= 10)
+        </script>
+
+    </section>
+
+    <section class="container2">
+        <h1>Please Enter Number</h1>
+        <input type="text" name="inputnumber" id="inputnumber">
+        <button type="submit" onclick="checkGrade()">Submit</button>
+        <label id="Gradedisplay"></label>
+        <script type="text/javascript">
+            function checkGrade() {
+                var a = document.getElementById('inputnumber').value;
+                // var a = prompt(num);
+                if (a >= 90) { //if percent > 90 --A
+                    document.getElementById('Gradedisplay').innerText = 'Grade - A';
+
+                } else if (a < 90 && a >= 80) { //80<percent<=80 --B
+                    document.getElementById('Gradedisplay').innerText = 'Grade - B';
+                } else if (a < 80 && a >= 70) { //70<percent<=70  --C
+                    document.getElementById('Gradedisplay').innerText = 'Grade - C';
+
+                } else if (a < 70 && a >= 60) { //60<percent<=60  --D
+                    document.getElementById('Gradedisplay').innerText = 'Grade - D';
+                } else if (a < 60) { //else
+                    document.getElementById('Gradedisplay').innerText = 'Grade - E';
+                }
+
+            }
+        </script>
+    </section>
+    <section class="container3">
+        <h1>Please Enter Your NAme</h1>
+        <input type="text" name="name" id="name">
+        <h1>Please Enter Your Surname</h1>
+        <input type="text" name="Surname" id="Surname">
+        <button type="submit" onclick="checkname()">Submit</button>
+        <label id="namedisplay"> 
+            
+        </label>
+        <script type="text/javascript">
+            function checkname() {
+                var name = document.getElementById('name').value;
+                var Surname = document.getElementById('Surname').value;
+                document.getElementById('namedisplay').innerText = 'Your Name Is : ' + name + Surname
+            }
+        </script>
+    </section>
+    <section class="container4">
         <select name="Operation" id="Operation">
-            <option value="addition">addition</option>
-            <option value="subtraction">subtraction</option>
-            <option value="division">division</option>
-            <option value="multiplication">multiplication</option>
-            <option value="Modulus">Modulus</option>
-            <option value="increment">increment</option>
-            <option value="decrement">decrement</option>
-
-          </select><br>
+            <option value="RED">RED</option>
+            <option value="GREEN">GREEN</option>
+            <option value="BLUE">BLUE</option>
+            <option value="OTHER">OTHER</option>
+        </select><br>
         <button type="submit" onclick="onTap()">Submit</button>
     </section>
 </body>
