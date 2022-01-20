@@ -11,88 +11,61 @@
 
 <body>
     <section class="container">
-        <h1>By For LOOP</h1><br>
-        <script type="text/javascript">
-            for (var a = 1; a <= 10; a++) {
-                console.log(a);
-                document.write('The Number is' + a + '<br>');
+        <h1>Task 1</h1><br>
+        <h2>Please Enter String :</h2><br>
 
-            }
-        </script>
-        <h1>By While Loop</h1>
-        <script type="text/javascript">
-            var a = 1;
-            while (a <= 10) {
-                console.log(a);
-                document.write('The Number is' + a + '<br>');
-                a++;
-            }
-        </script>
-        <h1>By Do While Loop</h1>
-        <script type="text/javascript">
-            var a = 1;
-            do {
-                console.log(a);
-                document.write('The Number is' + a + '<br>');
-                a++;
-            }
-
-            while (a <= 10)
-        </script>
+        <input type="text" id="input_str" name="string">
+        <button id="submit" name="submit" onclick="count()">Submit</button><br>
+        <label id="total_length"></label><br>
+        <label id="capital"></label><br>
+        <label id="small"></label><br>
+        <label id="number"></label><br>
+        <label id="special"></label><br>
 
     </section>
 
     <section class="container2">
-        <h1>Please Enter Number</h1>
-        <input type="text" name="inputnumber" id="inputnumber">
-        <button type="submit" onclick="checkGrade()">Submit</button>
-        <label id="Gradedisplay"></label>
-        <script type="text/javascript">
-            function checkGrade() {
-                var a = document.getElementById('inputnumber').value;
-                // var a = prompt(num);
-                if (a >= 90) { //if percent > 90 --A
-                    document.getElementById('Gradedisplay').innerText = 'Grade - A';
+        <div class="form">
+            <h1>Task 2</h1><br><br><br>
+            <h1>Please Enter Customer Id</h1>
+            <input type="text" name="customerId" id="customerId"><br>
+            <h1>Please Enter Customer name</h1>
+            <input type="text" name="customerName" id="customerName"><br>
+            <h1>Please Enter Number</h1>
+            <input type="text" name="customerNumber" id="customerNumber"><br>
+            <h1>Please Enter Number Of Items</h1>
+            <input type="text" name="inputItems" id="inputItems">
 
-                } else if (a < 90 && a >= 80) { //80<percent<=80 --B
-                    document.getElementById('Gradedisplay').innerText = 'Grade - B';
-                } else if (a < 80 && a >= 70) { //70<percent<=70  --C
-                    document.getElementById('Gradedisplay').innerText = 'Grade - C';
+            <button type="submit" onclick="itemDetails()">Add Items</button>
+            <label id="customerItems+"></label><br>
+            <label id="bill_details"></label><br>
+            <label id="total_price"></label><br>
+            <label id="tax_price"></label><br>
+            <label id="grand_total_price"></label>
+        </div>
+        <div class=""></div>
+        <div class="display-form">
 
-                } else if (a < 70 && a >= 60) { //60<percent<=60  --D
-                    document.getElementById('Gradedisplay').innerText = 'Grade - D';
-                } else if (a < 60) { //else
-                    document.getElementById('Gradedisplay').innerText = 'Grade - E';
-                }
+        </div>
 
-            }
-        </script>
     </section>
     <section class="container3">
-        <h1>Please Enter Your NAme</h1>
-        <input type="text" name="name" id="name">
-        <h1>Please Enter Your Surname</h1>
-        <input type="text" name="Surname" id="Surname">
-        <button type="submit" onclick="checkname()">Submit</button>
-        <label id="namedisplay"> 
-            
-        </label>
-        <script type="text/javascript">
-            function checkname() {
-                var name = document.getElementById('name').value;
-                var Surname = document.getElementById('Surname').value;
-                document.getElementById('namedisplay').innerText = 'Your Name Is : ' + name + Surname
-            }
-        </script>
+        <h1>TASK 3</h1>
+        <h2>Read Data From API</h2>
+
+        <button type="submit" onclick="apiCall()">Submit</button><br>
+        <label id="apiDisplay_email"></label><br>
+        <label id="apiDisplay_fname"></label><br>
+        <label id="apiDisplay_lname"></label><br>
+
     </section>
     <section class="container4">
-        <select name="Operation" id="Operation">
-            <option value="RED">RED</option>
-            <option value="GREEN">GREEN</option>
-            <option value="BLUE">BLUE</option>
-            <option value="OTHER">OTHER</option>
-        </select><br>
-        <button type="submit" onclick="onTap()">Submit</button>
+        <h1>TASK 4</h1>
+        <h2>Prompt ADD & Display Data</h2>
+
+        <button type="submit" onclick="onTap()">Submit</button><br>
+        <p id="prompt_display"></p>
+
     </section>
 </body>
 
